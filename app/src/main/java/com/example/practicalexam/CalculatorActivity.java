@@ -1,5 +1,15 @@
 package com.example.practicalexam;
 
+/*
+Problem 5:
+Exercise Objective: Create a simple Android calculator app that performs the following
+basic arithmetic operations: addition, subtraction, multiplication and division.
+Problem Statement: The app should have two input fields for entering numbers and buttons
+for each of the four arithmetic operations. Upon selecting an operation and pressing the
+"Calculate" button, the app should display the result.
+Expected Output: The app displays the result of the arithmetic operation.
+*/
+
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -35,14 +45,20 @@ public class CalculatorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
+        // Input field for the first number.
         EditText firstInput = findViewById(R.id.input_number_one);
+        // Input field for the second number.
         EditText secondInput = findViewById(R.id.input_number_two);
+        // Output label that shows the selected operation.
         TextView selectedView = findViewById(R.id.text_selected_operation);
+        // Output label for the calculation result.
         TextView resultView = findViewById(R.id.text_calculator_result);
+        // Operation buttons.
         Button addButton = findViewById(R.id.button_add);
         Button subtractButton = findViewById(R.id.button_subtract);
         Button multiplyButton = findViewById(R.id.button_multiply);
         Button divideButton = findViewById(R.id.button_divide);
+        // Action button to run the calculation.
         Button calculateButton = findViewById(R.id.button_calculate);
 
         addButton.setOnClickListener(view -> selectOperation(Operation.ADD, selectedView));
@@ -76,6 +92,7 @@ public class CalculatorActivity extends AppCompatActivity {
                     resultView.setText(getString(R.string.error_divide_by_zero));
                     return;
                 }
+                // Run the selected operation and display the result.
                 double result = calculate(first, second, selectedOperation);
                 resultView.setText(getString(R.string.calc_result, decimalFormat.format(result)));
             } catch (NumberFormatException exception) {
