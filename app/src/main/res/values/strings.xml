@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practical Exam Apps</string>
+
+    <string name="main_title">Practical Exam - Main Menu</string>
+    <string name="button_inches_to_cm">Problem 1: Inches to Centimetres</string>
+    <string name="button_tap_counter">Problem 2: Tap Counter</string>
+    <string name="button_bmi">Problem 3: BMI Calculator</string>
+    <string name="button_explicit_intent">Problem 4: Explicit Intent</string>
+    <string name="button_calculator">Problem 5: Calculator</string>
+
+    <string name="inches_title">Inches to Centimetres</string>
+    <string name="inches_hint">Enter inches</string>
+    <string name="button_convert">Convert</string>
+    <string name="inches_to_cm_result">Centimetres: %1$s</string>
+
+    <string name="tap_count">Tap count: %1$d</string>
+    <string name="button_tap_me">Tap me!</string>
+
+    <string name="bmi_title">BMI Calculator</string>
+    <string name="bmi_weight_hint">Weight (kg)</string>
+    <string name="bmi_height_hint">Height (m)</string>
+    <string name="button_calculate_bmi">Calculate BMI</string>
+    <string name="bmi_result">BMI: %1$s (%2$s)</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Normal</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obese">Obese</string>
+
+    <string name="explicit_first_title">First Activity</string>
+    <string name="button_to_second">Go to Second Activity</string>
+    <string name="explicit_second_title">Second Activity</string>
+    <string name="button_to_first">Go to First Activity</string>
+
+    <string name="calculator_title">Basic Calculator</string>
+    <string name="calculator_first_hint">First number</string>
+    <string name="calculator_second_hint">Second number</string>
+    <string name="selected_operation_placeholder">Selected operation: none</string>
+    <string name="selected_operation">Selected operation: %1$s</string>
+    <string name="button_add">+</string>
+    <string name="button_subtract">-</string>
+    <string name="button_multiply">x</string>
+    <string name="button_divide">/</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="calc_result">Result: %1$s</string>
+
+    <string name="error_required">This field is required.</string>
+    <string name="error_non_negative">Enter a non-negative value.</string>
+    <string name="error_positive_values">Enter values greater than zero.</string>
+    <string name="error_invalid_number">Enter a valid number.</string>
+    <string name="error_select_operation">Select an operation first.</string>
+    <string name="error_divide_by_zero">Cannot divide by zero.</string>
+</resources>
